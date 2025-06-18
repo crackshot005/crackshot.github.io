@@ -1,0 +1,43 @@
+:root {
+  --neon-pink: #ff00ff;
+  --neon-blue: #00f0ff;
+  --cyber-dark: #0d0221;
+}
+
+body {
+  background: var(--cyber-dark);
+  color: var(--neon-pink);
+  font-family: 'Courier New', monospace;
+}
+
+a {
+  color: var(--neon-blue);
+  text-decoration: none;
+  transition: 0.3s;
+}
+a:hover {
+  text-shadow: 
+    0 0 5px var(--neon-blue),
+    0 0 15px var(--neon-pink);
+}
+
+@keyframes glitch {
+  0% { transform: translate(0); }
+  20% { transform: translate(-2px, 2px); }
+  40% { transform: translate(2px, -2px); }
+  100% { transform: translate(0); }
+}
+.post-title:hover {
+  animation: glitch 0.4s infinite;
+}
+
+code {
+  background: rgba(0, 255, 255, 0.1);
+  border: 1px dashed var(--neon-blue);
+}
+body {
+  background-image: 
+    linear-gradient(rgba(0, 255, 255, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 255, 255, 0.06) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
