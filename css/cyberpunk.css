@@ -41,3 +41,6 @@ body {
     linear-gradient(90deg, rgba(0, 255, 255, 0.06) 1px, transparent 1px);
   background-size: 20px 20px;
 }
+body {
+  background: #0d0221 !important;
+}
